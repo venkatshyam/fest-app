@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+      <button ion-button menuToggle>
+     <ion-icon style="color:pink" name="menu"></ion-icon>
+     </button>
+         <ion-title class="tit">
+       Contact Us
+     </ion-title>
+  </ion-navbar>
+
+
+<ion-toolbar no-border-top>
+  <ion-segment [(ngModel)]="items">
+    <ion-segment-button value="contact" >
+      Contact People
+    </ion-segment-button>
+    <ion-segment-button value="feedback">
+      Feedback
+    </ion-segment-button>
+   
+  </ion-segment>
+</ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+
+<div [ngSwitch]="items">
+  <ion-list *ngSwitchCase="'contact'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/shyam.jpeg">
+      </ion-thumbnail>
+      <h2 >Shyam<br>venkatshyam2201@gmail.com<br>7995118569</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/kavya.jpg">
+      </ion-thumbnail>
+      <h2>Kavya<br>kavya@gmail.com<br>9618217334</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/raghu.jpg">
+      </ion-thumbnail>
+      <h2 >Raghu<br>raghu@gmail.com<br>9963921388</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/lakshmi.jpg">
+      </ion-thumbnail>
+      <h2>Lakshmi<br>lakshmi@gmail.com<br>8658468653</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/mvvikas.jpg">
+      </ion-thumbnail>
+      <h2>vikas<br>mvvikas1@gmail.com<br>7730882051</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="../assets/imgs/bharathi.jpg">
+      </ion-thumbnail>
+      <h2 text-bottom>bharati<br>bhaarati@gmail.com<br>9912124718</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="../assets/imgs/sai.jpeg">
+      </ion-thumbnail>
+      <h2>murali<br>murali@gmail.com<br>7032259665</h2>
+    </ion-item>
+    
+    <ion-item>
+        <ion-thumbnail item-start>
+          <img src ="assets/imgs/monica.jpg">
+        </ion-thumbnail>
+        <h2>Monica<br>monica@gmail.com<br>9553051673</h2>
+      </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/bharat.jpg">
+      </ion-thumbnail>
+      <h2>bharath<br>bharath@gmail.com<br>9492300153</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/dev.jpg">
+      </ion-thumbnail>
+      <h2>jyosna<br>jyosna@gmail.com<br>9553051673</h2>
+    </ion-item>
+    
+
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'feedback'">
+
+    <ion-item>
+      <ion-label color="primary" floating>feedback</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-textarea placeholder="feedback" #feeds rows="10"></ion-textarea>
+      </ion-item>
+      <button ion-button round (click)="feedback()">submit</button>
+    </ion-list>

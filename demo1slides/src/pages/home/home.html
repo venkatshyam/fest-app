@@ -1,0 +1,81 @@
+<ion-header color='primary'>
+    <div class="sizes" >
+  <button ion-button menuToggle >
+      <ion-icon ios="ios-menu" md="md-menu"> </ion-icon>
+  </button >
+<button class="tran"><b><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hungama 2K18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></b></button>
+
+</div>
+
+
+</ion-header>
+
+
+
+
+<ion-content  padding style="background-color: black">
+<ion-card width="100%">
+  
+    <ion-row  >
+      <ion-slides  autoplay="2000" loop="true" speed="700" pager >
+  
+        <ion-slide  class="p">
+           <img src="../assets/imgs/fest.jpg"  width="100%"></ion-slide>
+          
+          <ion-slide  class="p">
+              <img src="../assets/imgs/dance.jpg"  width="100%"></ion-slide>
+             <ion-slide  class="p">
+                <img src="../assets/imgs/colle.jpg"  width="100%"></ion-slide>
+               </ion-slides></ion-row>
+             
+              </ion-card>
+
+
+              <ion-grid class="card-background-page">
+              <ion-row style=" background-color:transparent" no-padding width="2px">
+                   <ion-card  class="card-background-page" (click)="wrkshp()">
+                     <div>
+                    <img src="../assets/imgs/wrr.jpg" height="150px" width="100%" float="left">
+                    <!-- <div class="card-title">Workshops</div> -->
+                  </div>
+                  </ion-card>
+                </ion-row>
+
+                <ion-row>
+                  <ion-card  class="card-background-page" (click)="nontech()">
+                    <img src="../assets/imgs/nonte.jpg" height="150px" width="100%">
+                    
+                     
+                  </ion-card>
+                  </ion-row>
+
+                  <ion-row >
+                       <ion-card  class="card-background-page" (click)="tech()">
+                         
+                    <img src="../assets/imgs/nte.png" height="150px" width="100%" >
+                    <!-- <div class="card-title" >Technical Events</div> -->
+                    
+                  </ion-card>
+                </ion-row>     
+
+                <ion-row>
+                  <ion-card  class="card-background-page" (click)="ppt()">
+                    <img src="../assets/imgs/ppt.jpg" height="150px" width="100%">
+                    <!-- <div class="card-title">PPT</div>                    -->
+                     
+                  </ion-card>
+                  </ion-row>
+
+                <ion-row>
+                 <ion-card class="card-background-page" (click)="spot()">
+                    <!-- <div class="card-title">Non-technical</div>   -->
+                  <img src="../assets/imgs/n1.jpg" height="150px" width="100%" item-right>
+                  </ion-card>
+                </ion-row>
+                
+              </ion-grid>
+              <ion-row>
+               
+                
+                </ion-row>
+              </ion-content>

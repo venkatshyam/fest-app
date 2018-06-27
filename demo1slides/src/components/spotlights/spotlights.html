@@ -1,0 +1,102 @@
+<ion-header >
+<ion-navbar color='primary'>
+     <ion-title text-center>Spot Lights</ion-title>
+   </ion-navbar>
+ </ion-header>
+<ion-content class="card-background-page">
+   <ion-card style="background-color:white">
+       <ion-card-header (click)="onAp()">
+      <div class="reframe"><img src="assets/imgs/app.jpg" /></div> 
+      
+       </ion-card-header>
+       <ion-card-content #Ap>
+         <p>“The future of mobile is the future of online. It is how people access online content now.”</p>
+           <b class="b">Details: </b>
+         <pre style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+        Participation fee-50 per head
+        Timings:9 to 11
+        Coordinators:Raghu,Kavya
+        Team size:3
+         </pre>
+         <button ion-button round (click)=reg() #mobhack>+</button>
+            <br>
+         <b class="b">prize money:500/-</b>
+       </ion-card-content>
+    </ion-card>
+    <ion-card>
+       <ion-card-header (click)="onHa()">
+       <div class="reframe"><img src="assets/imgs/hack5.png"/></div> 
+       
+       </ion-card-header>
+       <ion-card-content #Ha>
+           <p>Hackthons are where your crazy crazy ideas becomes reality</p>
+           <b class="b">Details: </b>
+           <pre style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+          Participation fee-50 per head
+          Timings:2 to 4
+          Coordinators:shyam,vikas
+          Team size:4
+           </pre>
+           <button ion-button round (click)=reg1() #hack>+</button>
+              <br>
+           <b class="b">prize money: 1000/-</b>
+         </ion-card-content>
+      </ion-card>
+    <ion-card>
+       <ion-card-header (click)="onIb()">
+       <div class="reframe"><img src="assets/imgs/idea.jpg"/></div> 
+       
+       </ion-card-header>
+       <ion-card-content #Ib>
+           <p>Its not about ideas.....Its about making Ideas happening</p>
+           <b class="b">Details: </b>
+           <pre style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+          Participation fee-50 per head
+          Timings:2 to 4
+          Coordinators: Monica,Bhoomi
+          Team size:1
+           </pre>
+           <button ion-button round (click)=ideass() #idea>+</button>
+              <br>
+           <b class="b">prize money: 500/-</b>
+         </ion-card-content>
+      </ion-card>
+    <ion-card>
+       <ion-card-header (click)="onTc()">
+       <div class="reframe"><img src="assets/imgs/tt.png"/></div> 
+       
+       </ion-card-header>
+       <ion-card-content #Tc>
+           <p>The less the man think,the more they talk. </p>
+           <b class="b">Details: </b>
+           <pre style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+          Participation fee-50 per head
+          Timings:1'00 clock 
+          Coordinators:Bharati and Jyosna
+          Team size:1
+           </pre>
+           <button ion-button round (click)=talkss() #talk>+</button>
+              <br>
+           <b class="b">prize money: 1500/-</b>
+         </ion-card-content>
+      </ion-card>
+    <ion-card>
+       <ion-card-header (click)="onJa()">
+       <div class="reframe"><img src="assets/imgs/ja1.jpg"/></div> 
+      
+       </ion-card-header>
+       <ion-card-content #Ja>
+           <p>Learn to enjoy every minute of life</p>
+           <b class="b">Details: </b>
+           <pre style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+          Participation fee-50 per head
+          Timings:3'00 clock
+          Coordinators:charan and Murali
+          Team size:2
+           </pre>
+           <button ion-button round (click)=jamss() #jam>+</button>
+              <br>
+           <b class="b">prize money: 2000/-</b>
+         </ion-card-content>
+      </ion-card>
+</ion-content>

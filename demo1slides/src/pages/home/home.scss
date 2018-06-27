@@ -1,0 +1,54 @@
+.p{
+    margin-top: 0%;
+    margin-left: 0%;
+    align-items: flex-start;
+    float:left;
+    padding:0;
+    height: 450;
+}
+.sizes{
+    align-content:center;
+}
+.card-background-page {
+
+    ion-card {
+     margin-top: 0px;
+     
+      text-align: center;
+      float:left;
+      padding: 0%;
+    
+    }
+    ion-grid{
+        padding:0%;
+    }
+        
+  
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color:black;
+      
+    }
+  
+    
+}
+
+.btn-bg{
+    background-color:greenyellow;
+    color:rgb(204, 204, 224);
+}
+.tran{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border:none;
+    cursor:pointer;
+    overflow:hidden;
+    outline:none;
+}
+ion-card{
+    background-color: wheat;
+}

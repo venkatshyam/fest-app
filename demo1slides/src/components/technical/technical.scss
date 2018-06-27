@@ -1,0 +1,33 @@
+technical {
+
+    .card-content {
+        padding: 0px 16px;
+        max-height: 0px;
+    }
+    .card-content {
+        padding: 0px 16px;
+        max-height: 0px;
+    }
+ ion-card {
+      position: relative;
+  text-align:center;
+   }
+    .bh{
+        position: relative;
+        text-align: left;
+    }
+    .card-background-page{
+        background-color: skyblue;
+    }
+    ion-card-content{
+        background-image: url('../assets/imgs/om.jpg')
+    }
+    .card-title {
+      position: absolute;
+      top: 20%;
+      font-size: 2.0em;
+      width: 90%;
+      font-weight: bold;
+      color: rgb(94, 3, 8);
+    }
+}

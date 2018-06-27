@@ -1,0 +1,29 @@
+accordion {
+
+    .card-content {
+        padding: 0px 16px;
+        max-height: 0px;
+    }
+    
+ ion-card {
+      position: relative;
+  text-align:center;
+   }
+   
+    .b{
+        position: relative;
+        text-align: left;
+    }
+    ion-card-content{
+        background-image: url('../assets/imgs/om.jpg')
+    }
+   
+    .card-title {
+      position: absolute;
+      top: 10%;
+      font-size: 2.0em;
+      width: 90%;
+      font-weight: bold;
+      color: #000;
+    }
+}

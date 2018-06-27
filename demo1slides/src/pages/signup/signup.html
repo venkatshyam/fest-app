@@ -1,0 +1,67 @@
+<ion-content class="bg">
+  <div class="alignment">
+  <ion-list>
+    <div class="align">
+        <h2>Register</h2>
+      </div>
+        <ion-item>
+          <ion-label>Name</ion-label>
+          <ion-input type="text" [(ngModel)]="name1" #name></ion-input>
+        </ion-item>
+        <p>{{nameerror}}</p>
+        <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="text" [(ngModel)]="email1" #email></ion-input>
+          </ion-item>
+          <p>{{emailerror}}</p>
+          <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="psw" #password></ion-input>
+          </ion-item>
+          <p>{{pswerror}}</p>
+          <ion-item>
+            <ion-label>College Name</ion-label>
+            <ion-input type="text" [(ngModel)]="clg" #college></ion-input>
+          </ion-item>
+          <p>{{clgerror}}</p>
+          <ion-item>
+            <ion-label>Year</ion-label>
+            <ion-select [(ngModel)]="year1" #year>
+              <ion-option value="1">1</ion-option>
+              <ion-option value="2">2</ion-option>
+              <ion-option value="3">3</ion-option>
+              <ion-option value="4">4</ion-option>
+            </ion-select>
+          </ion-item>
+          <p>{{yearerror}}</p>
+          
+              
+        <ion-item>
+          <ion-label>Branch</ion-label>
+          <ion-select [(ngModel)]="branch1" #branch>
+            <ion-option value="CSE">CSE</ion-option>
+            <ion-option value="ECE">ECE</ion-option>
+            <ion-option value="MECH">MECH</ion-option>
+            <ion-option value="IT">IT</ion-option>
+            <ion-option value="EEE">EEE</ion-option>
+            <ion-option value="CIVIL">CIVIL</ion-option>
+            <ion-option value="CHEMICAL">CHEMICAL</ion-option>
+          </ion-select>
+        </ion-item>
+        <p>{{brancherror}}</p>
+        
+        <ion-item>
+            <ion-label>Phone Number</ion-label>
+            <ion-input type="number" [(ngModel)]="phno" #phone></ion-input>
+          </ion-item>
+          <p >{{phoneerror}}</p>
+          
+      
+      </ion-list>
+      <div>
+ <button  ion-button full outline color="light" (click)="postData()">Register</button>
+ 
+ <button   ion-button clear full color="light" style="margin-bottom: 5%" (click)="sig()">Already registered? Login</button>
+      </div>
+    </div>   
+  </ion-content>

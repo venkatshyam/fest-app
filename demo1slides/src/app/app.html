@@ -1,0 +1,52 @@
+<ion-menu id="myMenu" [content]="content">
+
+
+  <ion-content padding class="bgs" no-repeat>
+      <ion-list>
+          <button  class="btn-bg" ion-item style="color:black" (click)="home()"ion-item menuClose >
+             <ion-icon item-start name="home"></ion-icon>
+            <b>Home</b>
+           </button>
+ 
+         <button class="btn-bg" ion-item menuClose style="color:black">
+             <ion-icon item-start name="notifications"></ion-icon>
+            <b> Notifications</b>
+           </button>
+ 
+          <button class="btn-bg" ion-item style="color:black" (click)="contest()" ion-item menuClose >
+                 <ion-icon item-start name="trophy"></ion-icon>
+         <b> Contest</b>
+         
+           </button>
+       
+         <button class="btn-bg" ion-item menuClose style="color:black" >
+           <ion-icon item-start name="locate"></ion-icon>
+           <b> Map</b>
+         </button>
+ 
+         <button class="btn-bg" ion-item  style="color:black" (click)="contact()" ion-item menuClose>
+             <ion-icon item-start name="contacts"></ion-icon>
+             <b>Contact Us</b>
+            </button>
+ 
+          <button  class="btn-bg"ion-item style="color:black" (click)="faq()"  ion-item menuClose >
+           <ion-icon item-start name="help"></ion-icon>
+           <b> FAQ</b>
+         </button>
+ 
+         <button class="btn-bg" ion-item menuClose style="color:black" (click)="devlopers()"  ion-item menuClose>
+             <ion-icon item-start name="code"></ion-icon>
+              <b>Devlopers</b>
+         </button>
+ 
+          <button  class="btn-bg"ion-item style="color:black" (click)="logout()" ion-item menuClose>
+           <ion-icon item-start name="log-out"></ion-icon>
+            <b>Logout</b>
+           </button>
+ </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

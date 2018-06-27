@@ -1,0 +1,47 @@
+
+   
+
+    <ion-content padding class="bg" no-repeat>
+    
+       <div style="text-align:center;" class="margintop">
+         <div>
+           <h2 style="color:blanchedalmond">Login</h2>
+         </div>
+            <ion-list>
+              <div class="align">
+                  <h2></h2>
+                </div>
+                    <ion-item>
+                      <ion-label style="color:blanchedalmond">Username</ion-label>
+                      <ion-input type="text" #username style="color:black"></ion-input>
+                    </ion-item>
+                  
+                    <ion-item>
+                      <ion-label style="color:blanchedalmond">Password</ion-label>
+                      <ion-input type="password" #password ></ion-input>
+                    </ion-item>
+                  
+                  </ion-list>
+                  
+                  <div padding>
+                        <button ion-button color="fa" round (click)="login()">Sign in</button>
+                  </div>
+                  <button ion-button round  (click)="forgot()" style="background-color:rgb(21, 175, 16)">Forgot password?</button>
+                </div>
+
+                  
+<ion-footer>
+    
+  
+       
+        <button ion-button round  (click)="signup()" style="background-color:rgb(21, 175, 16)">Sign up</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <!-- <button ion-button full style="background-color:#3b60c4 " >
+        <ion-icon name="logo-facebook"></ion-icon>&nbsp;&nbsp;&nbsp;Login with facebook</button>
+        <p style=" color: rgb(20, 4, 63);">-------------Or-----------</p>
+        <button ion-button full style="background-color:#c71610 ">
+        <ion-icon name="logo-googleplus"></ion-icon>&nbsp;&nbsp;&nbsp;Login with google</button> -->
+        <button ion-button round  (click)="adminlogin()" style="background-color:rgb(21, 175, 16)">Admin Login</button>
+    </ion-footer>
+    </ion-content>
+    

@@ -1,0 +1,21 @@
+
+
+
+<ion-content padding class="bg" >
+  <div style="color:blanchedalmond" class="alignn">Admin Login</div>
+  <ion-list>
+
+    <ion-item class="margin">
+      <ion-label stacked style="color:blanchedalmond">Username</ion-label>
+      <ion-input style="color: black" type="text" #ussername></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked style="color:blanchedalmond">Password</ion-label>
+      <ion-input  type="password" #password></ion-input>
+    </ion-item>
+    <div class="align">
+    <button ion-button color="dark" round (click)="register()">Login</button>
+  </div>
+  </ion-list>
+</ion-content>
